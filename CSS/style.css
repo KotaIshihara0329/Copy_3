@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Body */
+body {
+    height: 100%;
+    font-family: 'Test Heldane Display', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 33.5rem;
+    margin: 0 auto;
+    
+
+}
+
+
+/* Header */
+.header__logo {
+    width: 18rem;
+    margin: 6rem 0 0 1rem;
+}
+
+/* Nav */
+.nav__container {
+    width: 100%;
+   
+}
+
+.nav__main {
+   /* Don't put width to rem in order to magnify always regardress of what vw. */
+    width: 100vw;
+    height: 15rem;
+    margin-top: 1.5rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+/* Section1 */
+.section1__box {
+    width: 100%;
+    background-color: #FFAFAF;
+    margin: 0 auto;
+    height: 47.5rem;
+    margin: 6rem 0;
+}
+
+.section1__h1 {
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.section1__p {
+    border: 1px solid #222;
+    width: 29.5rem;
+    height: 34.5rem;
+    margin: 0 auto;
+    padding-right: 4.2rem;
+    padding-left: 1.5rem;
+}
+
+.section1__p ol {
+    padding-left: 1.5rem;
+}
+
+
+
+.section1__li {
+    margin-bottom: 3.4rem;
+}
+
+.section1__p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__li2 {
+    margin-bottom: 0;
+}
+
+
+
+
+/* Section2 */
+.section2__container {
+    display: grid;
+    row-gap: 1.5rem;
+    
+
+}
+
+.section2__container img {
+    width: 100%;
+}
+
+/* Section3 */
+.section3__box {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 44.8rem;
+    margin: 6rem 0;
+}
+
+.section3__box h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 0;
+}
+
+.section3__box h2 {
+    font-size: 1.4rem;
+}
+
+.section3__p {
+    border-bottom: 1px solid #222;
+    width: 29.5rem;
+    margin: 0 auto 3.8rem auto;
+    padding: 2rem 0;
+    
+    text-align: center;
+}
+
+.section3__a {
+    width: 29.5rem;
+    margin: 0 auto;
+
+}
+
+.section3__a p {
+    margin-bottom: 3.5rem;
+}
+
+.section3__a a:visited {
+    color: black;
+}
+
+.section3__pp {
+    margin-top: 0.3rem;
+}
+
+.section3__h2 {
+    margin-top: 0.6rem;
+}
+
+
+/* Footer */
+footer p {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width:768px) {
+    .header__container {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+    .nav__container {
+        object-fit: cover;
+    }
+
+    .nav__main {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .container {
+        width: 80rem;
+    }
+
+
+    .section1__box {
+        height: 39rem;
+    }
+
+
+    .section1__p {
+        width: 68rem;
+        height: 22rem;
+        padding: 3rem 17.4rem 3rem 13.6rem;
+    }
+
+    .section1__li, .section1__li2 {
+        margin: 2rem;
+    }
+
+    .section1__h1 {
+        margin: 0;
+        padding: 5rem 0;
+    }
+
+    .section2__container {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+
+    .section3__box {
+        height: 30.2rem;
+    }
+
+    .section3__flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .section3__p {
+        border-bottom: initial;
+        margin-bottom: 0;
+        margin-left: 6rem;
+        border-right: 1px solid #222;
+    }
+
+    .section3__box h1 {
+        margin-bottom: 3rem;
+    }
+
+    .section3__p {
+        text-align: left;
+        width: 23.6rem;
+        margin-right: 0;
+    }
+
+    .section3__a {
+        margin-left: 4rem;
+    }
+
+
+
+
+
+}
